@@ -30,4 +30,4 @@ Import cykliczny co `IMPORT_INTERVAL_MINUTES` minut:
 
 ```powershell
 py import_data.py --loop
-```
+'''
