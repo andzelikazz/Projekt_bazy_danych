@@ -25,7 +25,7 @@ Jednorazowy import z ostatnich 24 godzin:
 
 ```powershell
 py import_data.py
-
+'''
 Import cykliczny co `IMPORT_INTERVAL_MINUTES` minut:
 
 ```powershell
