@@ -1,6 +1,6 @@
-# Projekt bazy danych: cykliczny import trzesien ziemi z USGS
+# Projekt bazy danych
 
-Projekt pobiera dane o trzesieniach ziemi z publicznego API USGS Earthquake Catalog
+Projekt pobiera dane o trzesieniach ziemi z API USGS Earthquake
 i zapisuje je w bazie.
 
 ## Struktura
