@@ -1,2 +1,4 @@
 psycopg2-binary==2.9.9
 requests==2.32.3
+matplotlib==3.10.9
+basemap==2.0.0
