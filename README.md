@@ -38,7 +38,7 @@ Aby przeprowadzić filtrację danych należy wykorzystać poniższą składnię:
 python analyze_data.py report [wybór typu raportu]
 python analyze_data.py filter [argumenty tworzące zapytanie filtrujące]
 ```
-Należy wybrać odpowiednie argumenty tworzące filtrację z poniższych opcji:
+Należy wybrać odpowiednie komendy tworzące filtrację:
 - "--min-magnitude"
 - "--max-magnitude"
 - "--min-depth"
@@ -59,7 +59,7 @@ Należy wybrać odpowiednie argumenty tworzące filtrację z poniższych opcji:
 - "--limit"
 
   
-Dla wersji raportowej:
+Dla wersji raportowej po zastosowaniu komendy --name należy wybrać typ:
 - "summary"
 - "top"
 - "by_category"
@@ -69,4 +69,26 @@ Dla wersji raportowej:
 - "tsunami"
 - "imports"
 
+Przykładowe wywołania filtrujące:
+```powershell
+python analyze_data.py filter --min-magnitude 5 --country Japan --limit 20
+python analyze_data.py filter --from 2024-01-01 --to 2024-02-01 --tsunami
+python analyze_data.py report                 # wszystkie raporty
+python analyze_data.py report --name top  
+```
+
 ## Wizualizacja danych
+W celu wizualizacji danych należy wykorzystać poniższą składnię:
+```powershell
+python visualize_data.py visualize [wybór wizualizacji]
+```
+Po zastosowaniu komendy --type należy wybrać numer wizualizacji:
+- 1-top
+- 2-by_category
+- 3-magnitude_dist
+
+Przykładowe wywołania:
+```powershell
+python visualize_data.py visualize --type 1
+python visualize_data.py visualize --type 2
+```
