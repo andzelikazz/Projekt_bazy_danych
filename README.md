@@ -31,3 +31,42 @@ Import cykliczny co `IMPORT_INTERVAL_MINUTES` minut:
 ```powershell
 py import_data.py --loop
 '''
+```
+## Filtracja danych
+Aby przeprowadzić filtrację danych należy wykorzystać poniższą składnię:
+```powershell
+python analyze_data.py report [wybór typu raportu]
+python analyze_data.py filter [argumenty tworzące zapytanie filtrujące]
+```
+Należy wybrać odpowiednie argumenty tworzące filtrację z poniższych opcji:
+- "--min-magnitude"
+- "--max-magnitude"
+- "--min-depth"
+- "--max-depth"
+- "--from"
+- "--to"
+- "--category"
+- "--country"
+- "--city"
+- "--place"
+- "--alert"
+- "--magnitude-type"
+- "--status"
+- "--min-significance"
+- "--tsunami"
+- "--order-by"
+- "--asc"
+- "--limit"
+
+  
+Dla wersji raportowej:
+- "summary"
+- "top"
+- "by_category"
+- "by_country"
+- "by_day"
+- "magnitude_dist"
+- "tsunami"
+- "imports"
+
+## Wizualizacja danych
